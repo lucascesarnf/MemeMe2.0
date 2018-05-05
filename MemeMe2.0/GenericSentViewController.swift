@@ -9,16 +9,6 @@
 import UIKit
 
 extension UIViewController {
-    
-/*@IBAction func addMemeAction(_ sender: Any) {
-        let count = memes.count
-        guard let meme = Meme(topText: "Top Text Sample\(count)", bottomText: "Bottom Text Sample\(count)", originalImage: UIImage(named: "meme1")!, memeImage: UIImage(named: "meme1")!) else {
-            fatalError("Unable to instantiate meme")
-        }
-        MemeList.sharedInstance.addMeme(meme: meme)
-        updateMemes()
-    }*/
-    
     func empityLabel() -> UILabel {
         let rect = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height))
         let messageLabel = UILabel(frame: rect)
