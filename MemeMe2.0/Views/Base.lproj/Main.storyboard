@@ -300,7 +300,7 @@
                                             <action selector="cancelAction:" destination="BFW-Fv-Paj" eventType="touchUpInside" id="AG9-wN-m2V"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ty-Ph-yD0">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ty-Ph-yD0">
                                         <rect key="frame" x="150" y="0.0" width="74" height="74"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="74" id="7ya-44-XFZ"/>
