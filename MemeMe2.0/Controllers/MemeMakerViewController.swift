@@ -70,6 +70,7 @@ class MemeMakerViewController: UIViewController {
     
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         if menuIsActive {
             menuAnimation(activeMenu: true)
         }
@@ -81,7 +82,6 @@ class MemeMakerViewController: UIViewController {
     }
     
     private func backToMain() {
-        
         topTextField.text = "TOP TEXT HERE"
         bottomTextField.text = "BOTTOM TEXT HERE"
         imageView.image = nil

@@ -145,26 +145,26 @@
         <scene sceneID="vl3-YG-20w">
             <objects>
                 <collectionViewController storyboardIdentifier="MemeCollectionViewController" id="fUz-7s-ssG" customClass="MemeCollectionViewController" customModule="MemeMe2_0" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="XKw-nZ-hNr">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" id="XKw-nZ-hNr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HQJ-15-8qA">
-                            <size key="itemSize" width="150" height="190"/>
+                            <size key="itemSize" width="150" height="167"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MemeCollectionViewCell" reuseIdentifier="MemeCollectionViewCell" id="9Q2-7v-2pW" customClass="MemeCollectionViewCell" customModule="MemeMe2_0" customModuleProvider="target">
-                                <rect key="frame" x="10" y="10" width="150" height="190"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="MemeCollectionViewCell" reuseIdentifier="MemeCollectionViewCell" id="9Q2-7v-2pW" customClass="MemeCollectionViewCell" customModule="MemeMe2_0" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="150" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="150" height="190"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="167"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-P3-xjP">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="190"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="167"/>
                                         </imageView>
                                     </subviews>
                                 </view>
@@ -195,6 +195,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="flowLayout" destination="HQJ-15-8qA" id="hvU-Mk-zr9"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woC-6J-5Ky" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -209,43 +212,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7oe-V0-bnT">
-                                <rect key="frame" x="67" y="20" width="240" height="310"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="310" id="6nW-8L-SZd"/>
-                                    <constraint firstAttribute="width" constant="240" id="MyT-ev-EKn"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TopLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7C-Do-1JS">
-                                <rect key="frame" x="10" y="350" width="355" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BottomLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftC-qW-Cag">
-                                <rect key="frame" x="10" y="391" width="355" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7oe-V0-bnT" firstAttribute="top" secondItem="Tlj-JT-vfC" secondAttribute="top" id="BQq-L0-E6Q"/>
-                            <constraint firstItem="Tlj-JT-vfC" firstAttribute="trailing" secondItem="G7C-Do-1JS" secondAttribute="trailing" constant="10" id="OsY-Ou-u47"/>
-                            <constraint firstItem="G7C-Do-1JS" firstAttribute="top" secondItem="7oe-V0-bnT" secondAttribute="bottom" constant="20" id="Ruz-Jj-Lyz"/>
-                            <constraint firstItem="7oe-V0-bnT" firstAttribute="centerX" secondItem="Tlj-JT-vfC" secondAttribute="centerX" id="Vuy-yB-UFJ"/>
-                            <constraint firstItem="G7C-Do-1JS" firstAttribute="leading" secondItem="Tlj-JT-vfC" secondAttribute="leading" constant="10" id="i6a-UX-tMD"/>
-                            <constraint firstItem="ftC-qW-Cag" firstAttribute="leading" secondItem="Tlj-JT-vfC" secondAttribute="leading" constant="10" id="kyI-5y-Nau"/>
-                            <constraint firstItem="Tlj-JT-vfC" firstAttribute="trailing" secondItem="ftC-qW-Cag" secondAttribute="trailing" constant="10" id="n9y-to-PDW"/>
-                            <constraint firstItem="ftC-qW-Cag" firstAttribute="top" secondItem="G7C-Do-1JS" secondAttribute="bottom" constant="20" id="xxd-Sa-bDW"/>
+                            <constraint firstItem="Tlj-JT-vfC" firstAttribute="bottom" secondItem="7oe-V0-bnT" secondAttribute="bottom" id="O4b-vZ-BdJ"/>
+                            <constraint firstItem="7oe-V0-bnT" firstAttribute="top" secondItem="Tlj-JT-vfC" secondAttribute="top" id="PI4-oe-Z97"/>
+                            <constraint firstItem="7oe-V0-bnT" firstAttribute="leading" secondItem="Tlj-JT-vfC" secondAttribute="leading" id="iVH-Ld-6bU"/>
+                            <constraint firstItem="Tlj-JT-vfC" firstAttribute="trailing" secondItem="7oe-V0-bnT" secondAttribute="trailing" id="iyp-qb-5Zy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tlj-JT-vfC"/>
                     </view>
                     <navigationItem key="navigationItem" id="8JA-hd-WzS"/>
                     <connections>
-                        <outlet property="memeBottomLabel" destination="ftC-qW-Cag" id="jjv-U9-UR7"/>
                         <outlet property="memeImageView" destination="7oe-V0-bnT" id="eiP-cr-8z4"/>
-                        <outlet property="memeTopLabel" destination="G7C-Do-1JS" id="bD9-gx-8iY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vfy-nI-xfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,7 +236,7 @@
         <!--Meme Maker View Controller-->
         <scene sceneID="5vf-6d-ZO1">
             <objects>
-                <viewController storyboardIdentifier="MemeMakerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BFW-Fv-Paj" customClass="MemeMakerViewController" customModule="MemeMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemeMakerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BFW-Fv-Paj" customClass="MemeMakerViewController" customModule="MemeMe2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t30-yB-Btd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

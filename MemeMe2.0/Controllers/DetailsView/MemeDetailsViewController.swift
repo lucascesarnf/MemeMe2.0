@@ -11,8 +11,6 @@ import UIKit
 class MemeDetailsViewController: UIViewController {
 
     @IBOutlet weak var memeImageView: UIImageView!
-    @IBOutlet weak var memeTopLabel: UILabel!
-    @IBOutlet weak var memeBottomLabel: UILabel!
 
     
     var meme:Meme?
@@ -20,9 +18,7 @@ class MemeDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let meme = meme {
-            memeImageView.image = meme.memeImage
-            memeTopLabel.text = meme.topText
-            memeBottomLabel.text = meme.bottomText
+            memeImageView.image = meme.properties.memeImage
         }
     }
     
