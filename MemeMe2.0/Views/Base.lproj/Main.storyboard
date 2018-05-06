@@ -145,26 +145,26 @@
         <scene sceneID="vl3-YG-20w">
             <objects>
                 <collectionViewController storyboardIdentifier="MemeCollectionViewController" id="fUz-7s-ssG" customClass="MemeCollectionViewController" customModule="MemeMe2_0" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" id="XKw-nZ-hNr">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="XKw-nZ-hNr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HQJ-15-8qA">
-                            <size key="itemSize" width="150" height="167"/>
+                            <size key="itemSize" width="150" height="190"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" restorationIdentifier="MemeCollectionViewCell" reuseIdentifier="MemeCollectionViewCell" id="9Q2-7v-2pW" customClass="MemeCollectionViewCell" customModule="MemeMe2_0" customModuleProvider="target">
-                                <rect key="frame" x="10" y="10" width="150" height="167"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MemeCollectionViewCell" reuseIdentifier="MemeCollectionViewCell" id="9Q2-7v-2pW" customClass="MemeCollectionViewCell" customModule="MemeMe2_0" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="150" height="190"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="150" height="167"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="190"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-P3-xjP">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="167"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="190"/>
                                         </imageView>
                                     </subviews>
                                 </view>
@@ -196,7 +196,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="flowLayout" destination="HQJ-15-8qA" id="hvU-Mk-zr9"/>
+                        <outlet property="flowLayout" destination="HQJ-15-8qA" id="1X7-Ft-Jt7"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woC-6J-5Ky" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -217,10 +217,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Tlj-JT-vfC" firstAttribute="bottom" secondItem="7oe-V0-bnT" secondAttribute="bottom" id="O4b-vZ-BdJ"/>
-                            <constraint firstItem="7oe-V0-bnT" firstAttribute="top" secondItem="Tlj-JT-vfC" secondAttribute="top" id="PI4-oe-Z97"/>
-                            <constraint firstItem="7oe-V0-bnT" firstAttribute="leading" secondItem="Tlj-JT-vfC" secondAttribute="leading" id="iVH-Ld-6bU"/>
-                            <constraint firstItem="Tlj-JT-vfC" firstAttribute="trailing" secondItem="7oe-V0-bnT" secondAttribute="trailing" id="iyp-qb-5Zy"/>
+                            <constraint firstItem="Tlj-JT-vfC" firstAttribute="trailing" secondItem="7oe-V0-bnT" secondAttribute="trailing" id="Cwu-JW-RNp"/>
+                            <constraint firstItem="Tlj-JT-vfC" firstAttribute="bottom" secondItem="7oe-V0-bnT" secondAttribute="bottom" id="LcJ-jP-Dm5"/>
+                            <constraint firstItem="7oe-V0-bnT" firstAttribute="top" secondItem="Tlj-JT-vfC" secondAttribute="top" id="QqP-So-NMe"/>
+                            <constraint firstItem="7oe-V0-bnT" firstAttribute="leading" secondItem="Tlj-JT-vfC" secondAttribute="leading" id="nvO-54-bta"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Tlj-JT-vfC"/>
                     </view>

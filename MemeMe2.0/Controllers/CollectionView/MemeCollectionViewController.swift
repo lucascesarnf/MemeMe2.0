@@ -21,13 +21,11 @@ class MemeCollectionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let space:CGFloat = 3.0
-        //let dimension = (view.frame.size.width - (2 * space)) / 3.0
         let widthDimension = (view.frame.size.width - (10 * space)) / 3.0
-        let heightDimension = (view.frame.size.height - (4 * space)) / 4.0
+        let heightDimension = (view.frame.size.height - (10 * space)) / 4.0
         
         flowLayout.minimumInteritemSpacing = space
         flowLayout.minimumLineSpacing = space
-        //flowLayout.itemSize = CGSize(width: dimension, height: dimension)
         flowLayout.itemSize = CGSize(width: widthDimension, height: heightDimension)
         updateMemes()
     }
